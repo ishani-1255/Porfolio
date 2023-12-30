@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ishika's Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+
+        header {
+            background-color: rgb(194, 207, 224); /* Navy Blue */
+            color: white;
+            text-align: center;
+            padding:2em;
+            height: 500px;
+        }
+
+        .greeting {
+            margin-top: 90px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            height:200px;
+            font-weight: bold;
+            font-size: 60px;
+        }
+
+        .greet {
+            margin-top: 60px;
+            margin-left: 40px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            height:100px;
+            font-size: 20px;
+            color:rgb(148, 157, 167);
+        }
+
+
+        section {
+            margin-top: 40px;
+            padding: 2em;
+            height: 400px;
+        }
+
+        .project-container {
+            overflow-x: auto; /* Enable horizontal scrolling */
+            white-space: nowrap; /* Prevent wrapping to the next line */
+        }
+
+        .title{
+            font-size:50px;
+            margin-bottom: 15px;
+            margin-left: 10px;
+        }
+
+        .contact-icons {
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-icons a {
+            display: flex;
+            align-items: center;
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .contact-icons img {
+            width: 50px; /* Adjust the size of the icons as needed */
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .project {
+            display: inline-block;
+            width: 30%;
+            margin: 1em;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 1em;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden; /* Hide overflow content */
+            white-space: normal; /* Allow text to wrap within the container */
+        }
+
+        span{
+        color: #1e6fd9;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="greeting">
+            <h1>Hello, I'm 
+                <br><span>Ishika Ishani</span> </h1>
+            </div>
+            <div class="greet">
+                A Computer Science student aspiring
+                to deepen my knowledge across various <br> aspects of
+                technology and product development.
+                Join me as <br>
+                I explore the ever-evolving landscape of frontend development, <br>
+                aiming to fuse creativity with code to craft seamless <br>
+                and user-centric digital experiences.
+
+                </div>
+
+    </header>
+
+    <section id="projects">
+        <div class ="title">Projects</div>
+
+        <div class="project-container">
+            <div class="project">
+                <img src="Youtube.png" alt="Project 1" width="100%" height="200">
+                <h3>YouTube Clone Website</h3>
+                <p>Clone of Youtube website made using HTML and CSS.</p>
+            </div>
+
+            <div class="project">
+                <img src="Nav.png" alt="Project 2" width="100%" height="200">
+                <h3>Navratri Webpage</h3>
+                <p>Improvised version of Frontend Mentor Challenge made using HTML and CSS.</p>
+            </div>
+
+            <div class="project">
+                <img src="To-do.png" alt="Project 2" width="100%" height="200">
+                <h3>To Do List</h3>
+                <p>A To-Do List Website made using HTML, CSS and JavaScript.</p>
+            </div>
+
+            <div class="project">
+                <img src="Lintree.png" alt="Project 2" width="100%" height="200">
+                <h3>LinkTree Website Clone</h3>
+                <p>Clone of a website made using HTML, CSS and JavaScript.</p>
+            </div>
+
+            <div class="project">
+                <img src="Stop.png" alt="Project 2" width="100%" height="200">
+                <h3>Stop Watch</h3>
+                <p>Made a stopwatch using HTML, CSS and JavaScript.</p>
+            </div>
+
+            <div class="project">
+                <img src="Face.png" alt="Project 2" width="100%" height="200">
+                <h3>FaceBook Clone</h3>
+                <p>Clone of a website made using HTML, CSS and JavaScript.</p>
+            </div>
+
+            <div class="project">
+                <img src="project2-image.jpg" alt="Project 2" width="100%" height="200">
+                <h3>Project 2</h3>
+                <p>Description of Project 2 goes here.</p>
+            </div>
+
+            <div class="project">
+                <img src="project2-image.jpg" alt="Project 2" width="100%" height="200">
+                <h3>Project 2</h3>
+                <p>Description of Project 2 goes here.</p>
+            </div>
+
+            <!-- Add more projects as needed -->
+
+        </div>
+
+    </section>
+
+    <section id="contact">
+        <div class = "title">Contact</div>
+
+        <p>Connect with me on:</p>
+        <div class="contact-icons">
+            <a href="https://www.linkedin.com/in/ishika-ishani/">
+            <img src="link.png" alt="LinkedIn">
+            </a>
+        
+            <a href="https://github.com/ishani-1255">
+            <img src="github.png" alt="GitHub">
+        </a>
+      
+
+       
+            <a href="mailto:ishikaishani97@gmail.com">
+            <img src="email.jpeg" alt="Email">
+            </a>
+        </div>
+
+       
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Ishika's Portfolio</p>
+    </footer>
+
+</body>
+</html>
