@@ -20,7 +20,11 @@
             color: white;
             text-align: center;
             padding:2em;
-            height: 500px;
+            height: 550px;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
         .greeting {
@@ -41,17 +45,26 @@
             align-items: center;
             height:100px;
             font-size: 20px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             color:rgb(148, 157, 167);
+        }
+
+        .profile-image {
+            width: 100px; /* Adjust the size of the image as needed */
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
         }
 
 
         section {
-            margin-top: 40px;
+            margin-top: 30px;
             padding: 2em;
             height: 400px;
         }
 
-        .project-container {
+        .project-container ,
+        .blog-container  {
             overflow-x: auto; /* Enable horizontal scrolling */
             white-space: nowrap; /* Prevent wrapping to the next line */
         }
@@ -80,7 +93,8 @@
             margin-right: 10px;
         }
 
-        .project {
+        .project,
+        .blog {
             display: inline-block;
             width: 30%;
             margin: 1em;
@@ -91,6 +105,12 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             overflow: hidden; /* Hide overflow content */
             white-space: normal; /* Allow text to wrap within the container */
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .project:hover,
+        .blog:hover {
+            transform: scale(0.95);
         }
 
         span{
@@ -105,6 +125,7 @@
             position: fixed;
             width: 100%;
             bottom: 0;
+            margin-left: 0px;
         }
     </style>
 </head>
@@ -125,6 +146,7 @@
                 and user-centric digital experiences.
 
                 </div>
+                <img class="profile-image" src="profile-image.jpg" alt="">
 
     </header>
 
@@ -133,37 +155,43 @@
 
         <div class="project-container">
             <div class="project">
-                <img src="Youtube.png" alt="Project 1" width="100%" height="200">
+                <a href="https://youtube-clone-frontend-mocha.vercel.app/">
+                <img src="Youtube.png" alt="Project 1" width="100%" height="200"></a>
                 <h3>YouTube Clone Website</h3>
                 <p>Clone of Youtube website made using HTML and CSS.</p>
             </div>
 
             <div class="project">
-                <img src="Nav.png" alt="Project 2" width="100%" height="200">
+                <a href="https://navratri-webpage.vercel.app/">
+                <img src="Nav.png" alt="Project 2" width="100%" height="200"></a>
                 <h3>Navratri Webpage</h3>
                 <p>Improvised version of Frontend Mentor Challenge made using HTML and CSS.</p>
             </div>
 
             <div class="project">
-                <img src="To-do.png" alt="Project 2" width="100%" height="200">
+                <a href="https://todolist-iota-one.vercel.app/">
+                <img src="To-do.png" alt="Project 2" width="100%" height="200"></a>
                 <h3>To Do List</h3>
                 <p>A To-Do List Website made using HTML, CSS and JavaScript.</p>
             </div>
 
             <div class="project">
-                <img src="Lintree.png" alt="Project 2" width="100%" height="200">
+                <a href="https://linktreecloneproject.vercel.app/">
+                <img src="Lintree.png" alt="Project 2" width="100%" height="200"></a>
                 <h3>LinkTree Website Clone</h3>
                 <p>Clone of a website made using HTML, CSS and JavaScript.</p>
             </div>
 
             <div class="project">
-                <img src="Stop.png" alt="Project 2" width="100%" height="200">
+                <a href="https://stopwatch-lilac.vercel.app/">
+                <img src="Stop.png" alt="Project 2" width="100%" height="200"></a>
                 <h3>Stop Watch</h3>
                 <p>Made a stopwatch using HTML, CSS and JavaScript.</p>
             </div>
 
             <div class="project">
-                <img src="Face.png" alt="Project 2" width="100%" height="200">
+                <a href="https://facebookclone-swart.vercel.app">
+                <img src="Face.png" alt="Project 2" width="100%" height="200"></a>
                 <h3>FaceBook Clone</h3>
                 <p>Clone of a website made using HTML, CSS and JavaScript.</p>
             </div>
@@ -173,6 +201,32 @@
         </div>
 
     </section>
+
+    <section id="blogs">
+        <div class="title">Blogs</div>
+
+        <div class="blog-container">
+            <div class="blog">
+                <a href="https://hashnode.com/@IshikaIshani">
+                <img src="hashnode.png" alt="Blog 1" width="100%" height="200"></a>
+                <h3>Hashnode Blog</h3>
+                <p>Exploring the world of web development on Hashnode.</p>
+            </div>
+
+            <div class="blog">
+                <a href="https://medium.com/@ishikaishani">
+                <img src="medium.png" alt="Blog 2" width="100%" height="200"></a>
+                <h3>Medium Article</h3>
+                <p>Sharing insights into the latest tech trends on Medium.</p>
+            </div>
+
+            <div class="blog">
+                <a href="https://ishika-ishani.stck.me/">
+                <img src="stck.png" alt="Blog 3" width="100%" height="200"></a>
+                <h3>SC-Tech Blog</h3>
+                <p>Contributing to the tech community through Stck.me blogs.</p>
+            </div>
+
 
     <section id="contact">
         <div class = "title">Contact</div>
